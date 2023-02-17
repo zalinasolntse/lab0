@@ -1,0 +1,71 @@
+#mainmenu {
+	float:left;	}
+#mainmenu ul	{
+	margin: 20px 0 0 12px;      /*отступ ленты меню сверху */
+	padding: 12px;              /* отступ ленты меню слева */
+	list-style: none;	}   
+#mainmenu ul li	{
+	position: relative;
+	float:left;	}
+#nav {
+	display: flex;
+	flex-direction: column;
+}
+#mainmenu ul li ul,#mainmenu ul li ul li	{
+	width:130px;
+	color:red;	}
+#mainmenu ul li ul {
+	z-index: 2;
+}
+#mainmenu li ul {
+	position: absolute;
+	left: 68px;
+	top: -10px;
+	display: none;
+	float:left; }
+#mainmenu ul li a {
+	float:left;
+	color:violet;    /* Цвет текста гл.меню */
+	width:80px;    /* Длина ленты гл.меню */
+	font-size:16px;
+	padding: 10px 0 10px 0;
+	text-align:center;
+	background:purple;      /* Цвет фона гл.меню */
+	}
+#mainmenu li ul li a {
+	padding:5px 0 3px 10px;
+	text-align:left;
+	font-size:12px;
+	width:80px;
+	background:transparent;   /* Цвет поля группы выборочного меню */
+	}
+#mainmenu li ul li a:hover {
+	color:red;
+}
+#qwer ul {
+	background:tan;
+}
+#qwer ul li a{
+	color: gold;
+}
+#wert ul {
+	background:violet;
+}
+#wert ul li a{
+	color: blue;
+}
+#xdr a {
+		width:10px;          /* Графический элемент */
+		padding:18px;
+		height: 19px;        /* Высота граф. элем. */
+		font-size: 10px;
+		line-height: 24px;
+		}
+#xdr a img {
+	width: 30px;
+	height: 30px;
+}
+* html #mainmenu ul li {float:left; height: 1%;}
+* html #mainmenu ul li a {height: 1%;}
+#mainmenu li:hover ul,
+#mainmenu li.over ul { display:block;}		
